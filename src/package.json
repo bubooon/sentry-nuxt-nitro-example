@@ -1,0 +1,21 @@
+{
+  "name": "sentry-nuxt-nitro-example",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "prepare": "nuxi prepare .",
+    "start": "NODE_TLS_REJECT_UNAUTHORIZED=\"0\" node .output/server/index.mjs"
+  },
+  "dependencies": {
+    "nuxt": "3.12.3",
+    "vue": "latest"
+  },
+  "devDependencies": {
+    "@sentry/node": "8.13.0",
+    "@sentry/profiling-node": "8.13.0",
+    "ts-node": "10.9.1",
+    "typescript": "5.2.2"
+  }
+}

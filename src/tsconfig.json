@@ -1,0 +1,35 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "es2022",
+    "moduleResolution": "node",
+    "lib": [
+      "ESNext",
+      "DOM"
+    ],
+    "strictPropertyInitialization": true,
+    "noImplicitThis": false,
+    "sourceMap": true,
+    "allowUnreachableCode": true,
+    "isolatedModules": false,
+    "strict": true,
+    "noEmit": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "types": [
+      "@nuxt/types",
+      "node",
+      "vite/client",
+    ]
+  },
+  "exclude": [
+    "node_modules",
+    "dist"
+  ],
+  "include": [
+    "./**/*.ts",
+    "./**/*.vue",
+    "./.nuxt/nuxt.d.ts"
+  ],
+  "extends": "./.nuxt/tsconfig.json"
+}

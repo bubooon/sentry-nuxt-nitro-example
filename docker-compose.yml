@@ -1,0 +1,18 @@
+services:
+    frontend:
+        build:
+            context: ./
+            dockerfile: ./Dockerfile
+            args:
+                SENTRY_DSN: ${SENTRY_DSN}
+                SENTRY_ENV: ${SENTRY_ENV}
+                SENTRY_RELEASE: ${SENTRY_RELEASE}
+                BUILD_MODE: ${BUILD_MODE}
+        env_file:
+            - .env
+        expose:
+            - 3000
+        ports:
+            - 3000:3000
+        restart: unless-stopped
+            
